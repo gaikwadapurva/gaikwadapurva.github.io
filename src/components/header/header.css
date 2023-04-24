@@ -10,9 +10,172 @@ header {
     position: relative;
 }
 
+/* smartphones, iPhone, portrait 480x320 phones */
+
+@media screen and (min-width:320px) {
+    body h5 {
+        font-size: 10px;
+    }
+
+    body h1 {
+        font-size: 20px;
+    }
+
+    .cta {
+        display: flex;
+        margin-top: 1rem;
+        gap: 10px;
+        height: fit-content;
+        justify-content: center;
+    }
+
+    .me {
+        background: linear-gradient(var(--color-hover), transparent);
+        width: 80%;
+        height: 30rem;
+        position: absolute;
+        left: 10%;
+        border-radius: 12rem 12rem 0 0;
+        padding: 5rem 1.5rem 1.5rem 1.5rem;
+        margin-top: 2rem;
+        overflow: hidden;
+    }
+
+    .me img {
+        transform: rotate(-5.5deg);
+    }
+
+    .header__socials, .scroll__down {
+        display: none;
+    }
+
+    a {
+        font-size: 10px;
+    }
+
+    .btn {
+        padding: 8px 10px;
+    }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+@media screen and (min-width:481px) {
+    body h5 {
+        font-size: 12px;
+    }
+
+    body h1 {
+        font-size: 24px;
+    }
+
+    cta {
+        margin-top: 1.5rem;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    .me {
+        margin-top: 2.5rem;
+    }
+
+    .btn {
+        padding: 0.5rem 0.9rem;
+    }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+@media screen and (min-width:641px) {
+    header {
+        height: 68vh;
+    }
+
+    body h5 {
+        font-size: medium;
+    }
+
+    body h1 {
+        font-size: xx-large;
+    }
+
+    .cta {
+        margin-top: 2.5rem;
+        gap: 1.2rem;
+    }
+
+    .me {
+        background: linear-gradient(var(--color-hover), transparent);
+        width: 22rem;
+        height: 30rem;
+        position: absolute;
+        left: calc(50% - 11rem);
+        margin-top: 3rem;
+        border-radius: 12rem 12rem 0 0;
+        overflow: hidden;
+        padding: 5rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .header__socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:0.8rem;
+        position: absolute;
+        left: 0;
+        bottom: 3rem;
+    }
+    
+    .header__socials a {
+        color: var(--color-white);
+    }
+    
+    .header__socials a:hover {
+        color: var(--color-primary);
+    }
+
+    .header__socials::after {
+        content: '';
+        width: 1px;
+        height: 2rem;
+        background: var(--color-white);
+    }
+
+    .scroll__down {
+        display: block;
+        position: absolute;
+        align-self: center;
+        right: -2.3rem;
+        bottom: 5rem;
+        transform: rotate(90deg);
+        font-weight: 300;
+        font-size: 0.9rem;
+    }
+
+    .scroll__down:hover {
+        color: var(--color-primary);
+    }
+}
+
+/* big landscape tablets, laptops, and desktops */
+
+@media screen and (min-width:1025px) {
+    header {
+        height: 100vh;
+    }
+}
+
+/* .header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
 /* =============================== CTA =============================== */
 
-.cta {
+/* .cta {
     margin-top: 2.5rem;
     display: flex;
     gap: 1.2rem;
@@ -21,7 +184,7 @@ header {
 
 /* =============================== HEADER SOCIALS =============================== */
 
-.header__socials {
+/* .header__socials {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +211,7 @@ header {
 
 /* =============================== ME =============================== */
 
-.me {
+/* .me {
     background: linear-gradient(var(--color-hover), transparent);
     width: 22rem;
     height: 30rem;
@@ -66,7 +229,7 @@ header {
 
 /* =============================== SCROLL DOWN =============================== */
 
-.scroll__down {
+/* .scroll__down {
     position: absolute;
     right: -2.3rem;
     bottom: 5rem;
@@ -81,7 +244,7 @@ header {
 
 /* ================================ MEDIA QUERIES (MEDIUM DEVICES) ================================ */
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     header {
         height: 68vh;
     }
@@ -89,7 +252,7 @@ header {
 
 /* ================================ MEDIA QUERIES (SMALL DEVICES) ================================ */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     header {
         height: 100vh;
     }
@@ -97,4 +260,4 @@ header {
     .header__socials, .scroll__down {
         display: none;
     }
-}
+} */

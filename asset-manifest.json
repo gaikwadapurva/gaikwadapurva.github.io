@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a05dd05.css",
+    "main.css": "/static/css/main.c4a4a83f.css",
     "main.js": "/static/js/main.33dba471.js",
     "static/media/me-about.png": "/static/media/me-about.63c3b7019503d47dd65c.png",
     "static/media/me1.png": "/static/media/me1.8ce76edbca6f947aef71.png",
     "static/media/Apurva_Milind_Gaikwad.pdf": "/static/media/Apurva_Milind_Gaikwad.34c203195066dbc77d45.pdf",
     "index.html": "/index.html",
-    "main.3a05dd05.css.map": "/static/css/main.3a05dd05.css.map",
+    "main.c4a4a83f.css.map": "/static/css/main.c4a4a83f.css.map",
     "main.33dba471.js.map": "/static/js/main.33dba471.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a05dd05.css",
+    "static/css/main.c4a4a83f.css",
     "static/js/main.33dba471.js"
   ]
 }

@@ -1,0 +1,103 @@
+.experience__container {
+    display: grid;
+    gap: 2rem;
+}
+
+.experience_title h5 > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.experience_title {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    background: var(--color-bg-variant);
+    align-items: center;
+    position: relative;
+    border-radius: 0.7rem;
+    margin-bottom: 0.9rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+h5 {
+    font-size: 1.05rem;
+    line-height: 1.3;
+    letter-spacing: 0;
+}
+
+.experience_title h5 {
+    margin: 0;
+    width: 90%;
+}
+
+.bullet__point {
+    margin-right: 10px;
+}
+
+.experience_title .show__description {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: block;
+    cursor: pointer;
+}
+
+ul.exp {
+    list-style-type: square;
+    padding: 15px 20px;
+}
+
+.job_description {
+    width: 100%;
+    padding: 15px 20px;
+    display: inline-block;
+    background: var(--color-primary-variant);
+    border-radius: 0.7rem;
+    border: 1px solid transparent;
+    overflow: hidden;
+    transition: all cubic-bezier(.4,0,.2,1) .9s;
+    margin-bottom: 0.9rem;
+}
+
+.job_description.last_job_description {
+    margin-bottom: 0;
+}
+
+a.company__website {
+    font-weight: 600;
+    padding: 0.8rem;
+}
+
+/* ================================ MEDIA QUERIES (MEDIUM DEVICES) ================================ */
+
+@media screen and (max-width: 1024px) {
+    span.tenure {
+        font-size: small;
+        align-items: center;
+    }
+}
+
+/* ================================ MEDIA QUERIES (SMALL DEVICES) ================================ */
+
+@media screen and (max-width: 600px) {
+    span.tenure {
+        visibility: hidden;
+        width: 0;
+    }
+    .experience_title {
+        width: 100%;
+        min-height: 54px;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border-radius: 5px;
+    }
+    .experience_title h5 > div {
+        height: 54px;
+    }
+}

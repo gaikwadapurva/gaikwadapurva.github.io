@@ -31,17 +31,25 @@ header {
     bottom: 3rem;
 }
 
+.header__socials a {
+    color: var(--color-white);
+}
+
+.header__socials a:hover {
+    color: var(--color-primary);
+}
+
 .header__socials::after {
     content: '';
     width: 1px;
     height: 2rem;
-    background: var(--color-primary);
+    background: var(--color-white);
 }
 
 /* =============================== ME =============================== */
 
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
+    background: linear-gradient(var(--color-hover), transparent);
     width: 22rem;
     height: 30rem;
     position: absolute;
@@ -65,6 +73,10 @@ header {
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
+}
+
+.scroll__down:hover {
+    color: var(--color-primary);
 }
 
 /* ================================ MEDIA QUERIES (MEDIUM DEVICES) ================================ */

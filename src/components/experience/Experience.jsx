@@ -50,7 +50,7 @@ const Experience = () => {
       <div className="container experience__container">
         <div className="experience__details">
           <div className='experience__detail'>
-            <div className='experience_title'>
+            <div className={isRia ? 'experience_title active_title' : 'experience_title'}>
               <h5>
                 <div>
                   <span className='job_title'>
@@ -91,7 +91,7 @@ const Experience = () => {
           </div>
 
           <div className='experience__detail'>
-            <div className='experience_title'>
+            <div className={isItiviti ? 'experience_title active_title' : 'experience_title'}>
               <h5>
                 <div>
                   <span className='job_title'>
@@ -130,7 +130,7 @@ const Experience = () => {
           </div>
 
           <div className='experience__detail'>
-            <div className="experience_title">
+            <div className={isMediaNet ? 'experience_title active_title' : 'experience_title'}>
               <h5>
                 <div>
                   <span className='job_title'>

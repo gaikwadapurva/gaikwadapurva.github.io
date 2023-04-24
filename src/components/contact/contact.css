@@ -12,7 +12,7 @@
 }
 
 .contact__option {
-    background: var(--color-bg-variant);
+    background: var(--color-nohover);
     padding: 0.8rem;
     border-radius: 1.2rem;
     text-align: center;
@@ -21,8 +21,8 @@
 }
 
 .contact__option:hover {
-    background: transparent;
-    border-color: var(--color-black);
+    background: var(--color-hover);
+    border-color: transparent;
 }
 
 .contact__option-icon {
@@ -49,9 +49,9 @@ input, textarea {
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--color-dark);
+    border: 2px solid var(--color-white);
     resize: none;
-    color: var(--color-black);
+    color: var(--color-white);
 }
 
 /* ================================ MEDIA QUERIES (MEDIUM DEVICES) ================================ */

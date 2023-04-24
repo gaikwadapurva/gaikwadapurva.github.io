@@ -11,13 +11,18 @@
 
 :root {
     --color-bg: #F0FFFF;
-    --color-bg-variant: #B0C4DE;
+    --color-bg-variant: #F0F8FF;
     --color-primary: #4682B4;
-    --color-primary-variant: #F5F5F5;
+    --color-primary-variant: #DCDCDC;
     --color-pink: #FFDAB9;
+    --color-white: #fff;
     --color-black: #000000;
     --color-dark: #6495ED;
     --color-darkblue: #191970;
+    --color-hover: #9400D3;
+    --color-mediumhover: #BA55D3;
+    --color-nohover: #4B0082;
+    --color-expjobdesc: #241d41;
     --transition: all 400ms ease;
     --transition-experience: all 1200ms ease;
     --container-width-lg: 75%;
@@ -35,8 +40,8 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
-    color: var(--color-black);
+    background: var(--color-black);
+    color: var(--color-white);
     line-height: 1.7;
 }
 
@@ -61,20 +66,20 @@ section {
 
 section > h2, section > h5 {
     text-align: center;
-    color: var(--color-dark);
+    color: var(--color-white);
 }
 
 section > h2 {
-    color: var(--color-primary);
+    color: var(--color-white);
     margin-bottom: 3rem;
 }
 
 .text-light {
-    color: var(--color-dark);
+    color: var(--color-white);
 }
 
 a {
-    color: var(--color-primary);
+    color: var(--color-white);
     transition: var(--transition);
 }
 
@@ -85,22 +90,22 @@ a:hover {
 .btn {
     width: max-content;
     display: inline-block;
-    color: var(--color-primary);
+    color: var(--color-white);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-hover);
     transition: var(--transition);
 }
 
 .btn:hover {
-    background: var(--color-black);
-    color: var(--color-bg);
+    background: var(--color-hover);
+    color: var(--color-white);
     border-color: transparent;
 }
 
 .btn-primary {
-    background: var(--color-primary);
+    background: var(--color-nohover);
     color: var(--color-bg);
 }
 

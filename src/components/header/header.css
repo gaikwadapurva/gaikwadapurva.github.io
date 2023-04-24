@@ -52,6 +52,10 @@ header {
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
+.me img {
+    transform: rotate(-5.5deg);
+}
+
 /* =============================== SCROLL DOWN =============================== */
 
 .scroll__down {

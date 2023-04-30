@@ -2,12 +2,16 @@ header {
     height: 100vh;
     padding-top: 2rem;
     overflow: hidden;
+    background: url('../../assets/bg-texture.jpeg');
+    background-position: center center;
+    background-size: cover;
 }
 
 .header__container {
     text-align: center;
     height: 100%;
     position: relative;
+    padding-top: 10%;
 }
 
 /* =============================== CTA =============================== */
@@ -33,10 +37,11 @@ header {
 
 .header__socials a {
     color: var(--color-white);
+    font-weight: 600;
 }
 
 .header__socials a:hover {
-    color: var(--color-primary);
+    color: var(--color-rosy-brown);
 }
 
 .header__socials::after {
@@ -48,7 +53,7 @@ header {
 
 /* =============================== ME =============================== */
 
-.me {
+/* .me {
     background: linear-gradient(var(--color-hover), transparent);
     width: 22rem;
     height: 30rem;
@@ -62,7 +67,7 @@ header {
 
 .me img {
     transform: rotate(-5.5deg);
-}
+} */
 
 /* =============================== SCROLL DOWN =============================== */
 
@@ -71,12 +76,12 @@ header {
     right: -2.3rem;
     bottom: 5rem;
     transform: rotate(90deg);
-    font-weight: 300;
+    font-weight: 600;
     font-size: 0.9rem;
 }
 
 .scroll__down:hover {
-    color: var(--color-primary);
+    color: var(--color-rosy-brown);
 }
 
 /* ================================ MEDIA QUERIES (MEDIUM DEVICES) ================================ */

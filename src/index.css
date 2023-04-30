@@ -14,14 +14,11 @@
     --color-bg-variant: #F0F8FF;
     --color-primary: #4682B4;
     --color-primary-variant: #DCDCDC;
-    --color-pink: #FFDAB9;
     --color-white: #fff;
+    --color-rosy-brown: #BC8F8F;
     --color-black: #000000;
-    --color-dark: #6495ED;
-    --color-darkblue: #191970;
-    --color-hover: #9400D3;
-    --color-mediumhover: #BA55D3;
-    --color-nohover: #4B0082;
+    --color-hover: #4169E1;
+    --color-nohover: #191970;
     --color-expjobdesc: #241d41;
     --transition: all 400ms ease;
     --transition-experience: all 1200ms ease;
@@ -84,7 +81,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-black);
+    color: var(--color-primary);
 }
 
 .btn {

@@ -21,7 +21,7 @@ const Hero = () => {
                         <div className="hero__actions">
                             <Button
                                 variant="primary"
-                                href="/resume.pdf"
+                                href="/Apurva_Gaikwad_Resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

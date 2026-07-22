@@ -1,10 +1,11 @@
 import About from "./components/About";
 import Certifications from "./components/Certifications";
-import Contact from "./components/Contact/Contact";
+import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
             <Education />
             <Certifications />
             <Contact />
+            <Footer />
         </>
     );
 };

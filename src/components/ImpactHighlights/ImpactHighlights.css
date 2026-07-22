@@ -1,0 +1,38 @@
+.impact-highlights {
+    padding: var(--spacing-4xl) 0;
+
+    background: var(--color-surface);
+}
+
+.impact-highlights__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xl);
+}
+
+.impact-highlights__item {
+    padding: var(--spacing-xl);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+
+    background: var(--color-background);
+
+    text-align: center;
+
+    transition: transform var(--transition-default);
+}
+
+.impact-highlights__item:hover {
+    transform: translateY(-6px);
+}
+
+.impact-highlights__item h2 {
+    margin-bottom: var(--spacing-sm);
+
+    color: var(--color-primary);
+}
+
+.impact-highlights__item p {
+    color: var(--color-text-secondary);
+}

@@ -1,0 +1,21 @@
+@import "./reset.css";
+@import "./variables.css";
+@import "./typography.css";
+@import "./responsive.css";
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+}

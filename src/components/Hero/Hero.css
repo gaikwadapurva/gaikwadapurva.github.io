@@ -107,12 +107,36 @@
 }
 
 .hero__socials a {
-    color: var(--color-text-secondary);
-    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    transition: color var(--transition-default);
+    width: 48px;
+    height: 48px;
+
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+
+    color: var(--color-primary);
+
+    font-size: 1.25rem;
+
+    transition:
+        color var(--transition-default),
+        background-color var(--transition-default),
+        transform var(--transition-default);
 }
 
 .hero__socials a:hover {
-    color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
+}
+
+.hero__socials a:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 4px;
 }

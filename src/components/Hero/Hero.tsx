@@ -2,6 +2,7 @@ import "./Hero.css";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 import profilePhoto from "../../assets/images/apurva.jpeg";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Hero = () => {
     return (
@@ -41,16 +42,29 @@ const Hero = () => {
                         </div>
 
                         <div className="hero__socials">
-                            <a href="https://github.com/gaikwadapurva" target="_blank" rel="noopener noreferrer">
-                                GitHub
+                            <a
+                                href="https://github.com/gaikwadapurva"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub"
+                            >
+                                <FaGithub />
                             </a>
 
-                            <a href="https://linkedin.com/in/apurva-gaikwad" target="_blank" rel="noopener noreferrer">
-                                LinkedIn
+                            <a
+                                href="https://linkedin.com/in/apurva-gaikwad"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                            >
+                                <FaLinkedin />
                             </a>
 
-                            <a href="mailto:gaikwadapurva65@gmail.com">
-                                Email
+                            <a
+                                href="mailto:gaikwadapurva65@gmail.com"
+                                aria-label="Email"
+                            >
+                                <FaEnvelope />
                             </a>
                         </div>
                     </div>

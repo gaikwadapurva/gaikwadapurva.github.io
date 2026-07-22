@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: var(--spacing-xl);
 
-    padding: var(--spacing-2xl);
+    padding: var(--spacing-xl);
 
     background: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -24,18 +24,20 @@
 }
 
 .experience-card__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: start;
     gap: var(--spacing-xl);
+
+    cursor: default;
 }
 
 .experience-card__role {
     margin: 0 0 var(--spacing-xs);
 
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 .experience-card__company {
@@ -50,6 +52,7 @@
 .experience-card__meta {
     display: flex;
     flex-direction: column;
+    justify-self: end;
     gap: var(--spacing-xs);
 
     text-align: right;
@@ -61,6 +64,51 @@
 
 .experience-card__meta p {
     margin: 0;
+}
+
+.experience-card__toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    padding: 0;
+
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+
+    background: var(--color-surface);
+
+    color: var(--color-primary);
+
+    cursor: pointer;
+
+    transition:
+        background-color var(--transition-default),
+        border-color var(--transition-default),
+        transform var(--transition-default);
+}
+
+.experience-card__toggle svg {
+    width: 1.25rem;
+    height: 1.25rem;
+
+    stroke-width: 2.5;
+}
+
+.experience-card__toggle:hover {
+    background-color: rgba(79, 70, 229, 0.08);
+    border-color: var(--color-primary);
+}
+
+.experience-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+
+    overflow: hidden;
 }
 
 .experience-card__description {

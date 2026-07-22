@@ -1,4 +1,5 @@
 export interface Experience {
+    id: string;
     company: string;
     role: string;
     duration: string;
@@ -10,6 +11,7 @@ export interface Experience {
 
 export const EXPERIENCE: Experience[] = [
     {
+        id: "here",
         company: "HERE Technologies",
         role: "Software Engineer II - Full Stack",
         duration: "Feb 2024 – Present",
@@ -17,11 +19,11 @@ export const EXPERIENCE: Experience[] = [
         description:
             "Worked on enterprise geospatial platforms and large-scale mapping systems that power location intelligence, digital maps, and internal engineering workflows.",
         highlights: [
-            "Designed and developed scalable Java backend services powering enterprise geospatial data processing systems, supporting high-volume production workflows with a focus on performance and reliability.",
-            "Designed distributed data processing workflows that improved system throughput, fault tolerance, and operational reliability for large-scale production pipelines.",
-            "Led the modernization of a legacy enterprise geospatial asset management platform by defining the migration architecture from GWT to React and TypeScript, reducing infrastructure and maintenance costs by 50% while improving scalability, maintainability, and developer productivity.",
-            "Designed and developed the frontend for an internal geospatial imagery management platform, enabling engineering teams to monitor street-level imagery and manage large-scale image collection campaigns using React and TypeScript.",
-            "Diagnosed and resolved production issues across cloud-based AWS environments through log analysis, debugging, and root cause analysis, supporting services including EC2, ECS, Lambda, S3, ELB, and AMI-based deployments."
+            "Designed scalable Java backend services for enterprise geospatial data processing, supporting high-volume production workflows with high performance and reliability.",
+            "Designed distributed data processing workflows that improved system throughput, fault tolerance, and operational reliability.",
+            "Led the migration of a legacy geospatial platform from GWT to React and TypeScript, reducing infrastructure and maintenance costs by 50% while improving scalability and developer productivity.",
+            "Designed and developed the frontend for an internal geospatial imagery management platform, enabling engineering teams to monitor street-level imagery and manage image collection campaigns.",
+            "Diagnosed and resolved production issues across AWS environments through debugging, log analysis, and root cause analysis."
         ],
         technologies: [
             "Java",
@@ -35,6 +37,7 @@ export const EXPERIENCE: Experience[] = [
         ]
     },
     {
+        id: "ria",
         company: "RIA Advisory LLP",
         role: "Software Engineer - Java",
         duration: "Jan 2022 – Jan 2024",
@@ -55,6 +58,7 @@ export const EXPERIENCE: Experience[] = [
         ]
     },
     {
+        id: "itiviti",
         company: "Itiviti (Broadridge)",
         role: "Software Engineer - Full Stack",
         duration: "Jul 2021 – Dec 2021",
@@ -74,6 +78,7 @@ export const EXPERIENCE: Experience[] = [
         ]
     },
     {
+        id: "medianet",
         company: "Media.net",
         role: "Software Engineer - Product Engineering",
         duration: "Aug 2018 – Jun 2021",

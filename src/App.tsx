@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Certifications from "./components/Certifications";
+import Contact from "./components/Contact/Contact";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Header from "./components/Header/Header";
@@ -14,6 +15,7 @@ const App = () => {
             <Experience />
             <Education />
             <Certifications />
+            <Contact />
         </>
     );
 };

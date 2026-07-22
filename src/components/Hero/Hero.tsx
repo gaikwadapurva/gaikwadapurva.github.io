@@ -5,7 +5,10 @@ import profilePhoto from "../../assets/images/apurva.jpeg";
 
 const Hero = () => {
     return (
-        <section className="hero">
+        <section
+            id="home"
+            className="hero"
+        >
             <Container>
                 <div className="hero__container">
                     <div className="hero__content">

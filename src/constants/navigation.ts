@@ -1,5 +1,9 @@
 export const NAVIGATION_ITEMS = [
     {
+        label: "Home",
+        href: "#home",
+    },
+    {
         label: "About",
         href: "#about",
     },

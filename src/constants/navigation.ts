@@ -12,8 +12,12 @@ export const NAVIGATION_ITEMS = [
         href: "#experience",
     },
     {
-        label: "Projects",
-        href: "#projects",
+        label: "Education",
+        href: "#education",
+    },
+    {
+        label: "Certifications",
+        href: "#certifications",
     },
     {
         label: "Skills",

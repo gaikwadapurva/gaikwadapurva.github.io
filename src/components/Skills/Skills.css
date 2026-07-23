@@ -1,0 +1,117 @@
+.skills {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-xl) 0 var(--spacing-5xl);
+    min-height: calc(100vh - var(--header-height));
+    scroll-margin-top: var(--header-height);
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+    padding: var(--spacing-xl) 0;
+}
+
+.skills__header {
+    width: 100%;
+}
+
+.skills__eyebrow {
+    margin-bottom: var(--spacing-sm);
+
+    color: var(--color-primary);
+
+    font-weight: 600;
+}
+
+.skills__title {
+    margin: 0;
+}
+
+.skills__description {
+    margin-top: var(--spacing-lg);
+    width: 100%;
+}
+
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+    align-items: stretch;
+}
+
+.skills__card {
+    display: flex;
+    flex-direction: column;
+
+    column-gap: var(--spacing-md);
+    row-gap: var(--spacing-lg);
+
+    padding: var(--spacing-md);
+
+    background-color: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+
+    transition:
+        transform var(--transition-default),
+        border-color var(--transition-default),
+        box-shadow var(--transition-default);
+
+    cursor: default;
+}
+
+.skills__card:hover {
+    transform: translateY(-4px);
+
+    border-color: var(--color-primary);
+
+    box-shadow: 0 16px 32px rgba(79, 70, 229, 0.12);
+}
+
+.skills__card-title {
+    margin: 0;
+
+    color: var(--color-text-primary);
+
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.skills__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.skills__chip {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 0.35rem 0.75rem;
+
+    background-color: var(--color-background);
+
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+
+    color: var(--color-text-secondary);
+
+    font-size: 0.85rem;
+    font-weight: 500;
+
+    transition:
+        transform var(--transition-default),
+        background-color var(--transition-default),
+        border-color var(--transition-default),
+        color var(--transition-default);
+}
+
+.skills__chip:hover {
+    background-color: rgba(79, 70, 229, 0.08);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}

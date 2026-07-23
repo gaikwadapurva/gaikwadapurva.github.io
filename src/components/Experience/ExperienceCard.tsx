@@ -8,6 +8,7 @@ interface ExperienceCardProps {
     isExpanded: boolean;
     onToggle: (experienceId: string) => void;
     onExpandAnimationComplete: (experienceId: string) => void;
+    onCollapseAnimationComplete: () => void;
 }
 
 const ExperienceCard = ({
@@ -15,6 +16,7 @@ const ExperienceCard = ({
     isExpanded,
     onToggle,
     onExpandAnimationComplete,
+    onCollapseAnimationComplete,
 }: ExperienceCardProps) => {
     return (
         <article className="experience-card">
@@ -40,7 +42,10 @@ const ExperienceCard = ({
                 </button>
             </header>
 
-            <AnimatePresence initial={false}>
+            <AnimatePresence
+                initial={false}
+                onExitComplete={onCollapseAnimationComplete}
+            >
                 {isExpanded && (
                     <motion.div
                         className="experience-card__content"

@@ -2,22 +2,44 @@ import { EXPERIENCE } from "../../data/experience";
 import Container from "../ui/Container";
 import ExperienceCard from "./ExperienceCard";
 import "./Experience.css";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Experience = () => {
     const [expandedExperienceId, setExpandedExperienceId] = useState<
         string | null
     >(EXPERIENCE[0].id);
 
+    const [pendingCollapseId, setPendingCollapseId] = useState<string | null>(null);
+
     const cardRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
     const handleToggle = (experienceId: string) => {
         if (expandedExperienceId === experienceId) {
-            setExpandedExperienceId(null);
+
+            setPendingCollapseId(experienceId);
+
+            const experienceSection = document.getElementById("experience");
+
+            if (!experienceSection) {
+                return;
+            }
+
+            const header = document.querySelector(".header") as HTMLElement | null;
+
+            const navbarHeight = header?.offsetHeight ?? 80;
+
+            const top =
+                experienceSection.getBoundingClientRect().top +
+                window.scrollY -
+                navbarHeight;
+
+            window.scrollTo({
+                top,
+                behavior: "smooth",
+            });
+
             return;
         }
-
-        setExpandedExperienceId(experienceId);
 
         setExpandedExperienceId(experienceId);
 
@@ -59,6 +81,45 @@ const Experience = () => {
         });
     };
 
+    const handleCollapseAnimationComplete = () => {
+        const experienceSection = document.getElementById("experience");
+
+        if (!experienceSection) {
+            return;
+        }
+
+        const header = document.querySelector(".header") as HTMLElement | null;
+
+        const navbarHeight = header?.offsetHeight ?? 80;
+
+        const top =
+            experienceSection.getBoundingClientRect().top +
+            window.scrollY -
+            navbarHeight;
+
+        window.scrollTo({
+            top,
+            behavior: "smooth",
+        });
+    };
+
+    useEffect(() => {
+
+        if (!pendingCollapseId) {
+            return;
+        }
+
+        const timeout = window.setTimeout(() => {
+            setExpandedExperienceId(null);
+            setPendingCollapseId(null);
+        }, 300);
+
+        return () => {
+            window.clearTimeout(timeout);
+        };
+
+    }, [pendingCollapseId]);
+
     return (
         <section id="experience" className="experience">
             <Container>
@@ -90,6 +151,7 @@ const Experience = () => {
                                     isExpanded={expandedExperienceId === experience.id}
                                     onToggle={handleToggle}
                                     onExpandAnimationComplete={handleExpandAnimationComplete}
+                                    onCollapseAnimationComplete={handleCollapseAnimationComplete}
                                 />
                             </div>
                         ))}

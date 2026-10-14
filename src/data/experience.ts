@@ -19,11 +19,12 @@ export const EXPERIENCE: Experience[] = [
         description:
             "Worked on enterprise geospatial platforms and large-scale mapping systems that power location intelligence, digital maps, and internal engineering workflows.",
         highlights: [
-            "Designed scalable Java backend services for enterprise geospatial data processing, supporting high-volume production workflows with high performance and reliability.",
-            "Designed distributed data processing workflows that improved system throughput, fault tolerance, and operational reliability.",
-            "Led the migration of a legacy geospatial platform from GWT to React and TypeScript, reducing infrastructure and maintenance costs by 50% while improving scalability and developer productivity.",
-            "Designed and developed the frontend for an internal geospatial imagery management platform, enabling engineering teams to monitor street-level imagery and manage image collection campaigns.",
-            "Diagnosed and resolved production issues across AWS environments through debugging, log analysis, and root cause analysis."
+            "Sole-owned the end-to-end modernization of HERE's Enterprise Geographic Information System (EGIS), a legacy Maven/GWT application with multiple modules, to React, TypeScript, and Spring Boot within 3 months, independently driving architecture design, development, integration, and testing, with a target of reducing infrastructure costs by 50% upon production deployment.",
+            "Owned frontend development of an internal imagery dashboard used by 2,000–3,000+ employees to monitor millions of crowdsourced images uploaded daily.",
+            "Developed Java and Kafka-based backend services for high-volume geospatial data ingestion, decoupling producers and consumers to improve system reliability.",
+            "Contributed to technical design reviews for migration strategies and API contracts, evaluating architectural alternatives, implementation approaches, maintainability, and engineering costs.",
+            "Mentored junior engineers through technical guidance, code reviews, and knowledge sharing to support engineering development and code quality.",
+            "Identified and decommissioned an unused AWS Classic Load Balancer while investigating deployments across EC2, ECS, S3, and Lambda, eliminating unnecessary infrastructure costs."
         ],
         technologies: [
             "Java",
@@ -45,9 +46,11 @@ export const EXPERIENCE: Experience[] = [
         description:
             "Built enterprise digital banking solutions that enabled U.S. financial institutions to streamline online account opening and customer onboarding.",
         highlights: [
-            "Developed full-stack digital banking applications using Salesforce, Apex, and Angular, enabling secure online account opening across multiple banking product types.",
-            "Optimized backend services and database interactions to improve application responsiveness, system efficiency, and production performance.",
-            "Investigated and resolved production issues through performance monitoring, log analysis, and cross-functional collaboration to ensure application reliability."
+            "Developed object-oriented Apex (Java-like) business logic, validations, and integrations for Terafina’s digital account opening platform, supporting onboarding for multiple U.S. banks including First State Bank, Lincoln Savings Bank, SouthState Bank, and People’s Savings Bank.",
+            "Engineered bank-specific onboarding workflows using Salesforce Apex and Angular, implementing customized business rules to improve the end-to-end customer onboarding experience.",
+            "Investigated and resolved production issues across frontend and backend components, improving reliability while preserving client-specific functionality.",
+            "Contributed to design and cross-functional code reviews, evaluating implementation approaches, maintainability, and adherence to engineering standards.",
+            "Mentored junior engineers on application architecture and banking onboarding workflows."
         ],
         technologies: [
             "Salesforce",
@@ -66,9 +69,9 @@ export const EXPERIENCE: Experience[] = [
         description:
             "Developed enterprise trading and capital markets software supporting high-performance financial systems for global investment banking operations.",
         highlights: [
-            "Developed and enhanced enterprise trading and financial software using Java and Angular for Goldman Sachs, supporting global investment banking workflows.",
-            "Collaborated with cross-functional engineering teams to deliver scalable, high-performance features that met production standards and evolving business requirements.",
-            "Investigated production issues, optimized application performance, and improved code quality to enhance the reliability and stability of enterprise financial systems."
+            "Developed Java and Angular onboarding workflow features for FIX Conductor, Itiviti’s FIX counterparty certification and onboarding platform, supporting Goldman Sachs’ trading operations.",
+            "Collaborated with cross-functional engineering teams to deliver and troubleshoot features in a financial trading environment, meeting performance, compliance, and code-quality requirements.",
+            "Guided junior engineers on development best practices."
         ],
         technologies: [
             "Java",
@@ -86,11 +89,12 @@ export const EXPERIENCE: Experience[] = [
         description:
             "Built large-scale advertising technology platforms that processed real-time ad auctions and content monetization for high-traffic web applications.",
         highlights: [
-            "Developed large-scale advertising technology platforms that processed real-time bidding (RTB) auctions and content monetization for high-traffic web applications.",
-            "Engineered and optimized real-time ad serving workflows, improving system reliability and revenue performance through data-driven experimentation and performance tuning.",
-            "Analyzed large-scale production datasets using MySQL and Hive to identify infrastructure bottlenecks and drive system performance and revenue optimizations.",
-            "Supported distributed advertising platform integrations and resolved production incidents across high-throughput, real-time serving environments.",
-            "Automated reporting and operational workflows, reducing manual effort and improving engineering efficiency."
+            "Developed Java and JavaScript components for real-time bidding (RTB) solutions across Content Monetization, Header Bidding, and Prebid platforms, supporting programmatic advertising workflows.",
+            "Served as the technical point of contact for Demand-Side Platform (DSP), Supply-Side Platform (SSP), and RTB integrations, working with business teams to resolve integration issues.",
+            "Ran A/B and AABB experiments on ad formats and bidding strategies, using MySQL and an in-house Hive-based analytics tool to analyze performance and find revenue optimization opportunities.",
+            "Investigated and resolved ad-serving issues across HTML, CSS, JavaScript, and backend integrations, using Google Ad Manager for reporting and troubleshooting.",
+            "Partnered with Product Managers on product enhancements and feature rollouts, translating technical changes into guidance for business teams across locations.",
+            "Mentored junior engineers and conducted technical interviews for Data Analyst and Product Operations Analyst roles."
         ],
         technologies: [
             "Java",
